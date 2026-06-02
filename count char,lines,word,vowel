@@ -1,0 +1,10 @@
+with open("abc.txt","r") as f:
+    data=f.read()
+print("No. of characters=",len(data))
+print("No. of words=",len(data.split()))
+print("No. of lines=",len(data.splitlines()))
+v=0
+for i in data.upper():
+    if i in "AEIOU":
+          v+=1
+print("No. of vowels=",v)
