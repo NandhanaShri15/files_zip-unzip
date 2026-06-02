@@ -1,0 +1,6 @@
+with open("source.txt","r") as f:
+    data=f.read()
+new_data=data[::-1]
+with open("destination.txt","w")as f:
+    f.write(new_data)
+print("Reversed content written successfully")
